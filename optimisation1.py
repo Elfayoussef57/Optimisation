@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Use Agg backend for non-interactive environments
+plt.switch_backend('Agg')
+
 # Fonction et son gradient
 def f(x):
     return x[0]**2 + 7*x[1]**2 / 2
@@ -64,6 +67,8 @@ plt.title("Trajectoires de la descente de gradient")
 plt.xlabel("x")
 plt.ylabel("y")
 plt.legend()  # S'assure que seuls les éléments avec un label sont inclus
-plt.show()
+
+# Save the plot to a file
+plt.savefig('trajectoires_descente_gradient.png')
 
 

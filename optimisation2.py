@@ -75,6 +75,5 @@ plt.ylabel("y")
 plt.legend()
 plt.colorbar(label='Valeurs de f(x, y)')  # Barre de couleur pour les courbes de niveau
 plt.grid(True)
-plt.show()
-
+plt.savefig("figure2.png")
 
